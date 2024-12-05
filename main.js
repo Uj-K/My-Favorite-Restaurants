@@ -1,4 +1,4 @@
-var map = L.map('map').setView([47.25001285355109, -122.47588451220068], 12);
+var map = L.map('map').setView([47.23, -122.48], 12.3);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -35,11 +35,47 @@ var restaurants = [
         lat: 47.256876343657254, 
         lng: -122.43962678760512,
         description: "Casual dining"
+    },
+    {
+        name: "The Grill",
+        lat: 47.17266585857368, 
+        lng: -122.48428232256246,
+        description: "Korean"
+    },
+    {
+        name: "Salamone’s Pizza",
+        lat: 47.265355619446396, 
+        lng: -122.4474922807633,
+        description: "Pizza"
+    },
+    {
+        name: "Field Bar & Bottle Shop",
+        lat: 47.25552427471303, 
+        lng: -122.47090430419273,
+        description: "Unique cuisine"
+    },
+    {
+        name: "Red Gem",
+        lat: 47.19838979354568, 
+        lng: -122.48312168045177,
+        description: "Korean-Chinese restaurant·"
+    },
+    {
+        name: "bb.q Chicken Tacoma Lakewood",
+        lat: 47.17835205233487, 
+        lng: -122.48470033179389,
+        description: "Korean Fried Chicken"
     }
 
 ];
 
+var myIcon = L.icon({
+    iconUrl: 'restaurant.png',
+    iconSize: [37, 42],
+});
+
 restaurants.forEach(function(restaurant) {
-    var marker = L.marker([restaurant.lat, restaurant.lng]).addTo(map);
+    var marker = L.marker([restaurant.lat, restaurant.lng], {icon: myIcon}).addTo(map);
     marker.bindPopup("<b>" + restaurant.name + "</b><br>" + restaurant.description);
 });
+

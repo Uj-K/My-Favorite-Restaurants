@@ -13,46 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Parkinsans:wght@300..800&display=swap"
         rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            margin: 5%;
-            background-color: rgb(241, 218, 198);
-        }
-
-        #map {
-            height: 40vh;
-            width: 90%;
-            max-width: 700px;
-            border: 2px solid black;
-        }
-
-        .card {
-            width: 20rem;
-            font-family: "Lacquer", system-ui;
-        }
-
-        .card-header {
-            background-color: rgb(234, 234, 243);
-        }
-
-        .card-body {
-            background-color: lightblue;
-        }
-        .title {
-            font-family: "Lacquer", system-ui;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script defer src="main.js"></script>
 </head>
 
 <body>
-    <h1 class = "title">My Favorite Restaurants</h1>
+    <h1 class="title">My Favorite Restaurants</h1>
+    <br>
     <div id="map"></div>
     <br><br>
     <div class="row row-cols-1 row-cols-md-2 g-10">

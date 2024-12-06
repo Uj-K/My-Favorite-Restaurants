@@ -1,2 +1,11 @@
 ## My Favorite Restaurants in Tacoma Area
-Using [Leaflet.js](https://leafletjs.com/) and [Bootstrap](https://getbootstrap.com/) library, display my favorite restaurant on a map and provide brief information about each restaurant.
+Using API, framework, library, etc. display my favorite restaurant on a map and provide brief information about each restaurant.
+
+## List of Development Tools used in this website
+[Leaflet.js](https://leafletjs.com/)
+
+[Bootstrap](https://getbootstrap.com/)
+
+[Google Fonts](https://fonts.google.com/)
+
+[nawicon](https://www.flaticon.com/free-icons/restauran) 
